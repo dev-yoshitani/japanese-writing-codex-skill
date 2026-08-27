@@ -7,6 +7,16 @@
 > [!NOTE]
 > 個人開発の非公式Skillであり、OpenAI公式製品ではない。
 
+## かんたんダウンロード
+
+[**最新版の `japanese-writing.zip` をダウンロード**](https://github.com/yoshitani-dev/japanese-writing-codex-skill/releases/latest/download/japanese-writing.zip)
+
+1. ダウンロードしたZIPを展開する。
+2. 中の`japanese-writing`フォルダーを`C:\Users\<ユーザー名>\.codex\skills\`へ置く。
+3. Codexを再起動するか、新しいタスクを開始する。
+
+macOS / Linuxでは、`japanese-writing`フォルダーを`${CODEX_HOME:-$HOME/.codex}/skills/`へ置く。
+
 ## 主な特徴
 
 - 数値、単位、日付、固有名詞、引用、URL、数式、変数、専門用語、条件、判断結果を保護する。
@@ -38,6 +48,8 @@
 - `application`: 奨学金、志望理由、自己PR、留学、インターン
 
 ## インストール
+
+上記のZIP方式が最も簡単である。Gitで更新履歴も取得したい場合は、以下を使用する。
 
 既存の`japanese-writing`がある場合は、内容を確認してからバックアップまたは移動する。
 
