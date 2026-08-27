@@ -1,0 +1,6 @@
+interface:
+  display_name: "日本語文章最適化"
+  short_description: "用途・文体・事実を守り、日本語文章を適切に作成・推敲"
+  default_prompt: "Use $japanese-writing to revise or draft this Japanese text while preserving facts, numbers, requirements, and the writer's voice."
+policy:
+  allow_implicit_invocation: true
