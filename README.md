@@ -1,22 +1,24 @@
 # Japanese Writing for Codex
 
+[English](README_EN.md)
+
 意味・事実・数値・書き手の声を守りながら、日本語文章を用途別に監査、推敲、再構成、または新規作成するCodex Skillである。
 
-This repository is the stable **Baseline** Codex Skill for auditable Japanese drafting and editing. It supports automatic selection for matching requests and serves as the unchanged comparison reference for [Japanese Writing Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill), an explicit-invocation variant with one additional validated core check.
+This repository is the main release line of the Codex Skill for auditable Japanese drafting and editing. Version 1.1.0 incorporates the validated core improvement while preserving the `japanese-writing` identity and automatic selection.
 
 単なる「Humanizer」やAI検出回避を目的としない。自然さより正確性を優先すべき場面を区別し、既存文章では必要な箇所だけを直す。
 
 > [!NOTE]
 > 個人開発の非公式Skillであり、OpenAI公式製品ではない。
 
-## どちらを使うか
+## v1.1.0での更新
 
-| 選択 | 向いている用途 |
-| --- | --- |
-| **Baseline（このRepository）** | 安定した参照実装、自動選択、比較・回帰評価の基準として使う場合 |
-| **[Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill)** | 明示呼び出しだけで使い、不要な指示遵守のメタ説明を抑える追加検証項目が必要な場合 |
+- 不要な指示遵守のメタ説明を成果物へ書かないための、検証済みcoreチェック1項目を取り込んだ。
+- Skill名`japanese-writing`とautomatic invocationを維持し、既存ユーザーの呼び出し方を変更していない。
+- `natural`、`report`、`technical`、`manual`、`essay`、`application`の6つのreferenceはv1.0.0から変更していない。
+- 人工的な文長variation、接続詞の機械的削除、誤字、架空の経験などは追加していない。
 
-両方とも事実、数値、条件、不確実性、技術的意味、書き手の声の保護を目的とする。Baselineは非推奨版や意図的に機能を落とした版ではない。
+評価過程を保存した明示呼び出し版は[Japanese Writing Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill)に残している。通常のインストール先は、このmain releaseを推奨する。
 
 ## かんたんダウンロード
 
@@ -109,6 +111,8 @@ japanese-writing/
 ```
 
 設計上の判断は[ARCHITECTURE.md](ARCHITECTURE.md)、第三者Sourceとの関係は[THIRD_PARTY_SOURCES.md](THIRD_PARTY_SOURCES.md)を参照する。
+
+v1.1.0の変更内容は[CHANGELOG.md](CHANGELOG.md)、検証条件と限界は[VERIFICATION_v1.1.0.md](VERIFICATION_v1.1.0.md)を参照する。
 
 ## セキュリティ
 

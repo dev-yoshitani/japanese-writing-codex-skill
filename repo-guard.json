@@ -3,6 +3,10 @@
   "scan_email": true,
   "required_paths": [
     "README.md",
+    "README_EN.md",
+    "CHANGELOG.md",
+    "VERIFICATION_v1.1.0.md",
+    "SHA256SUMS",
     "SKILL.md",
     "agents/openai.yaml",
     "ARCHITECTURE.md",
