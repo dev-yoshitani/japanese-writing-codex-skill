@@ -2,10 +2,21 @@
 
 意味・事実・数値・書き手の声を守りながら、日本語文章を用途別に監査、推敲、再構成、または新規作成するCodex Skillである。
 
+This repository is the stable **Baseline** Codex Skill for auditable Japanese drafting and editing. It supports automatic selection for matching requests and serves as the unchanged comparison reference for [Japanese Writing Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill), an explicit-invocation variant with one additional validated core check.
+
 単なる「Humanizer」やAI検出回避を目的としない。自然さより正確性を優先すべき場面を区別し、既存文章では必要な箇所だけを直す。
 
 > [!NOTE]
 > 個人開発の非公式Skillであり、OpenAI公式製品ではない。
+
+## どちらを使うか
+
+| 選択 | 向いている用途 |
+| --- | --- |
+| **Baseline（このRepository）** | 安定した参照実装、自動選択、比較・回帰評価の基準として使う場合 |
+| **[Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill)** | 明示呼び出しだけで使い、不要な指示遵守のメタ説明を抑える追加検証項目が必要な場合 |
+
+両方とも事実、数値、条件、不確実性、技術的意味、書き手の声の保護を目的とする。Baselineは非推奨版や意図的に機能を落とした版ではない。
 
 ## かんたんダウンロード
 
