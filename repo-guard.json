@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scan_email": true,
+  "required_paths": [
+    "README.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "ARCHITECTURE.md",
+    "THIRD_PARTY_SOURCES.md"
+  ],
+  "forbidden_globs": [
+    "*.exe",
+    "*.dll",
+    "*.ps1",
+    "*.bat",
+    "*.sh",
+    ".env"
+  ],
+  "skill_contract": {
+    "skill_root": ".",
+    "expected_name": "japanese-writing",
+    "allow_implicit_invocation": true,
+    "required_references": [
+      "core.md",
+      "natural.md",
+      "report.md",
+      "technical.md",
+      "manual.md",
+      "essay.md",
+      "application.md"
+    ]
+  }
+}
