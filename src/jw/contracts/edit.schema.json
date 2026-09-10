@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Japanese Writing sentence patch response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["edits"],
+  "properties": {
+    "edits": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sentence_id", "text"],
+        "properties": {
+          "sentence_id": {"type": "integer", "minimum": 0},
+          "text": {"type": "string", "maxLength": 50000}
+        }
+      }
+    }
+  }
+}

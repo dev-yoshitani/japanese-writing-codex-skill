@@ -12,7 +12,20 @@
 
 ## Runtime security properties
 
-`japanese-writing`はMarkdownとYAMLだけで構成し、Runtimeで次を要求しない。
+### v2 optional engine
+
+The optional Python engine runs local code, takes explicit file or standard input,
+and emits redacted reports. It has no built-in network client, credential lookup,
+shell execution, automatic recording or file overwrite. Replay writes accepted
+prose only to an explicitly selected new path. Library state contains source text
+in memory; callers control provider communications and any persistence.
+Instruction/data separation, typed patch scope and exact placeholders reduce
+specific failures. They do not establish semantic prompt-injection immunity or
+guarantee that all sensitive content is automatically redacted by custom adapters.
+
+### Historical v1.x / Lite behavior
+
+v1.xおよびLite版の`japanese-writing`はMarkdownとYAMLだけで構成し、Runtimeで次を要求しない。
 
 - network通信
 - shell、PowerShell、Python、JavaScript等の実行

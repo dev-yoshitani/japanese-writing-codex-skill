@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Japanese Writing deterministic report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "status", "mode", "genre", "coverage", "metrics", "alignments", "findings"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["PASS", "WARN", "FAIL"]},
+    "mode": {"enum": ["audit", "compare"]},
+    "genre": {"enum": ["natural", "report", "technical", "manual", "essay", "application"]},
+    "coverage": {"type": "object", "required": ["semantic_verification", "limitations", "protected_kinds"], "properties": {"semantic_verification": {"const": false}, "limitations": {"type": "array", "items": {"type": "string"}}, "protected_kinds": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false},
+    "metrics": {"type": "object", "additionalProperties": {"type": ["number", "string"]}},
+    "alignments": {"type": "array", "items": {"type": "object", "required": ["source_ids", "target_ids", "confidence"], "additionalProperties": false, "properties": {"source_ids": {"type": "array", "items": {"type": "integer"}}, "target_ids": {"type": "array", "items": {"type": "integer"}}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}}}},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["rule", "severity", "message", "source_ids", "target_ids", "details"], "additionalProperties": false, "properties": {"rule": {"type": "string"}, "severity": {"enum": ["WARN", "FAIL"]}, "message": {"type": "string"}, "source_ids": {"type": "array", "items": {"type": "integer"}}, "target_ids": {"type": "array", "items": {"type": "integer"}}, "details": {"type": "object"}}}}
+  }
+}

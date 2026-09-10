@@ -1,0 +1,359 @@
+[
+  {
+    "id": "application-01",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。荷重は14 Nである。",
+    "candidate": "取り組みを振り返る。荷重は41 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "application-02",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。変位は8 mmである。",
+    "candidate": "取り組みを振り返る。変位を測った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "8 mm"
+      }
+    ]
+  },
+  {
+    "id": "application-03",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。測定を行った。",
+    "candidate": "取り組みを振り返る。測定を9回行った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": []
+  },
+  {
+    "id": "application-04",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。費用は800円である。",
+    "candidate": "取り組みを振り返る。費用は800円と800円である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "800円"
+      }
+    ]
+  },
+  {
+    "id": "application-05",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。長さは16 mである。",
+    "candidate": "取り組みを振り返る。長さは16 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "16 m"
+      }
+    ]
+  },
+  {
+    "id": "application-06",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。日付は2025年6月8日である。",
+    "candidate": "取り組みを振り返る。日付は2025年6月9日である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "application-07",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。資料は <https://example.org/Study> を参照する。",
+    "candidate": "取り組みを振り返る。資料は <https://example.org/study> を参照する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "url",
+        "value": "https://example.org/Study"
+      }
+    ]
+  },
+  {
+    "id": "application-08",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。式は$y=x+7$である。",
+    "candidate": "取り組みを振り返る。式は$y=x-7$である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "equation",
+        "value": "$y=x+7$"
+      }
+    ]
+  },
+  {
+    "id": "application-09",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。限界荷重を確認する。",
+    "candidate": "取り組みを振り返る。終極荷重を確認する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "term",
+        "value": "限界荷重"
+      }
+    ]
+  },
+  {
+    "id": "application-10",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。入力は18 N。出力は27 N。",
+    "candidate": "取り組みを振り返る。入力は27 N。出力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "application-11",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。荷重は14 Nである。",
+    "candidate": "取り組みを振り返る。荷重は14 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "application-12",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。幅は４２ mmである。",
+    "candidate": "取り組みを振り返る。幅は42 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "４２ mm"
+      }
+    ]
+  },
+  {
+    "id": "application-13",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。参加者は2,400人である。",
+    "candidate": "取り組みを振り返る。参加者は2400人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2,400人"
+      }
+    ]
+  },
+  {
+    "id": "application-14",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。参加者は二百人である。",
+    "candidate": "取り組みを振り返る。参加者は200人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "二百人"
+      }
+    ]
+  },
+  {
+    "id": "application-15",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。荷重は2.3e3 Nである。",
+    "candidate": "取り組みを振り返る。荷重は2300 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2.3e3 N"
+      }
+    ]
+  },
+  {
+    "id": "application-16",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。日付は2025年6月8日である。",
+    "candidate": "取り組みを振り返る。日付は2025-06-08である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "application-17",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。入力は18 N。出力は27 N。",
+    "candidate": "取り組みを振り返る。出力は27 N。入力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "application-18",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。温度は240 Kであり、圧力は80 Paである。",
+    "candidate": "取り組みを振り返る。温度は240 Kである。圧力は80 Paである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "240 K"
+      },
+      {
+        "kind": "quantity",
+        "value": "80 Pa"
+      }
+    ]
+  },
+  {
+    "id": "application-19",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。実際に測定を行った。",
+    "candidate": "取り組みを振り返る。実測した。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  },
+  {
+    "id": "application-20",
+    "genre": "application",
+    "synthetic": true,
+    "source": "取り組みを振り返る。赤、青、白を選んだ。",
+    "candidate": "取り組みを振り返る。赤、青、白を選んだ。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  }
+]

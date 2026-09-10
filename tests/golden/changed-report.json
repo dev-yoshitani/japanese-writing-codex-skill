@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "status": "FAIL",
+  "mode": "compare",
+  "genre": "natural",
+  "coverage": {
+    "protected_kinds": [
+      "number",
+      "quantity",
+      "date",
+      "time",
+      "url",
+      "equation",
+      "term",
+      "verbatim"
+    ],
+    "semantic_verification": false,
+    "limitations": [
+      "PASS means only that the configured deterministic checks found no violation.",
+      "Unregistered names, new semantic claims, negation, certainty and causal meaning are not verified.",
+      "Alignment is heuristic; equations need explicit math delimiters or glossary locks for reliable coverage.",
+      "Equal fact values do not prove that their attribution or conditions were preserved."
+    ]
+  },
+  "metrics": {
+    "source_chars": 35,
+    "target_chars": 35,
+    "count_mode": "all",
+    "edit_ratio": 0.055556,
+    "sentence_edit_ratio": 0.5,
+    "source_facts": 2,
+    "target_facts": 2,
+    "removed_or_changed": 1,
+    "added_or_changed": 1,
+    "lint_before": 0,
+    "lint_after": 0
+  },
+  "alignments": [
+    {
+      "source_ids": [
+        0
+      ],
+      "target_ids": [
+        0
+      ],
+      "confidence": 0.9375
+    },
+    {
+      "source_ids": [
+        1
+      ],
+      "target_ids": [
+        1
+      ],
+      "confidence": 1.0
+    }
+  ],
+  "findings": [
+    {
+      "rule": "fact.changed",
+      "severity": "FAIL",
+      "message": "Protected item changed",
+      "source_ids": [
+        0
+      ],
+      "target_ids": [
+        0
+      ],
+      "details": {
+        "kind": "quantity"
+      }
+    }
+  ]
+}

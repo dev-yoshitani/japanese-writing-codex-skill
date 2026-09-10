@@ -1,0 +1,359 @@
+[
+  {
+    "id": "natural-01",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。荷重は14 Nである。",
+    "candidate": "記録を読み返した。荷重は41 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "natural-02",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。変位は8 mmである。",
+    "candidate": "記録を読み返した。変位を測った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "8 mm"
+      }
+    ]
+  },
+  {
+    "id": "natural-03",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。測定を行った。",
+    "candidate": "記録を読み返した。測定を9回行った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": []
+  },
+  {
+    "id": "natural-04",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。費用は800円である。",
+    "candidate": "記録を読み返した。費用は800円と800円である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "800円"
+      }
+    ]
+  },
+  {
+    "id": "natural-05",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。長さは16 mである。",
+    "candidate": "記録を読み返した。長さは16 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "16 m"
+      }
+    ]
+  },
+  {
+    "id": "natural-06",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。日付は2025年6月8日である。",
+    "candidate": "記録を読み返した。日付は2025年6月9日である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "natural-07",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。資料は <https://example.org/Study> を参照する。",
+    "candidate": "記録を読み返した。資料は <https://example.org/study> を参照する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "url",
+        "value": "https://example.org/Study"
+      }
+    ]
+  },
+  {
+    "id": "natural-08",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。式は$y=x+7$である。",
+    "candidate": "記録を読み返した。式は$y=x-7$である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "equation",
+        "value": "$y=x+7$"
+      }
+    ]
+  },
+  {
+    "id": "natural-09",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。限界荷重を確認する。",
+    "candidate": "記録を読み返した。終極荷重を確認する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "term",
+        "value": "限界荷重"
+      }
+    ]
+  },
+  {
+    "id": "natural-10",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。入力は18 N。出力は27 N。",
+    "candidate": "記録を読み返した。入力は27 N。出力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "natural-11",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。荷重は14 Nである。",
+    "candidate": "記録を読み返した。荷重は14 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "natural-12",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。幅は４２ mmである。",
+    "candidate": "記録を読み返した。幅は42 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "４２ mm"
+      }
+    ]
+  },
+  {
+    "id": "natural-13",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。参加者は2,400人である。",
+    "candidate": "記録を読み返した。参加者は2400人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2,400人"
+      }
+    ]
+  },
+  {
+    "id": "natural-14",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。参加者は二百人である。",
+    "candidate": "記録を読み返した。参加者は200人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "二百人"
+      }
+    ]
+  },
+  {
+    "id": "natural-15",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。荷重は2.3e3 Nである。",
+    "candidate": "記録を読み返した。荷重は2300 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2.3e3 N"
+      }
+    ]
+  },
+  {
+    "id": "natural-16",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。日付は2025年6月8日である。",
+    "candidate": "記録を読み返した。日付は2025-06-08である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "natural-17",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。入力は18 N。出力は27 N。",
+    "candidate": "記録を読み返した。出力は27 N。入力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "natural-18",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。温度は240 Kであり、圧力は80 Paである。",
+    "candidate": "記録を読み返した。温度は240 Kである。圧力は80 Paである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "240 K"
+      },
+      {
+        "kind": "quantity",
+        "value": "80 Pa"
+      }
+    ]
+  },
+  {
+    "id": "natural-19",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。実際に測定を行った。",
+    "candidate": "記録を読み返した。実測した。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  },
+  {
+    "id": "natural-20",
+    "genre": "natural",
+    "synthetic": true,
+    "source": "記録を読み返した。赤、青、白を選んだ。",
+    "candidate": "記録を読み返した。赤、青、白を選んだ。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  }
+]

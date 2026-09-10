@@ -1,0 +1,5 @@
+# Synthetic glossary. Flat YAML scalar lists; exact terminology locks.
+terms:
+  - "試作材A"
+  - "限界荷重"
+  - "σ_allow"

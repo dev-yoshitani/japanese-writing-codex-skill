@@ -1,5 +1,18 @@
 # Japanese Writing for Codex
 
+**v2.0.0rc2:** natural Japanese drafting and editing with Astra, including contextual
+revision, voice preservation and optional deterministic checks. Read
+[the v2 quickstart](README_v2.md), [architecture](docs/architecture.md)
+and [evaluation evidence](docs/evaluation.md). This is a prerelease; naturalness improvements have not been established by a controlled model comparison.
+
+[Lite ZIP](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v2.0.0rc2/japanese-writing-lite-2.0.0rc2.zip) · [Full ZIP](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v2.0.0rc2/japanese-writing-2.0.0rc2.zip)
+The original Skill identity and genre references remain compatible.
+
+The sections below document v1.x. Their public download links and historic
+evaluations do not describe the v2 candidate or a live-LLM comparison.
+
+## Historical v1.x documentation
+
 [日本語](README.md)
 
 `japanese-writing` is an unofficial Codex Skill for auditing, minimally editing, restructuring, and drafting Japanese prose while preserving facts, numbers, conditions, uncertainty, technical meaning, and the writer's voice.
@@ -17,7 +30,7 @@ Backward compatibility is preserved:
 - the six genre references are unchanged from v1.0.0; and
 - no new executable or runtime dependency is introduced.
 
-The explicit-only evaluation snapshot remains available in [Japanese Writing Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill). For ordinary installation, use this main release line.
+The validated improvement was integrated into this Baseline. The redundant public Improved repository has since been deleted.
 
 ## Modes and genres
 

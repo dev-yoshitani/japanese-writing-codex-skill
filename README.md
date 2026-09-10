@@ -1,5 +1,32 @@
 # Japanese Writing for Codex
 
+## v2.0.0rc2 — Astraで自然な文章を書くための改善版
+
+Astraが文脈を読み、文のつながり、読み返す負担、情報の順序、書き手の語彙や調子を整える手順を追加した。共通規則の重複を整理し、本文の完成を優先する。数値などを確認するPythonエンジンは任意で使える。
+**v2.0.0rc2はプレリリースです。自然さの生成品質比較は未実施です。**
+
+[執筆用の軽量版ZIP](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v2.0.0rc2/japanese-writing-lite-2.0.0rc2.zip) · [検証機能付きZIP](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v2.0.0rc2/japanese-writing-2.0.0rc2.zip)
+
+展開した `japanese-writing` フォルダーをスキルの配置先へ置いてください。既存版は先にバックアップしてください。Astraは利用側で選択します。
+
+- [v2の使い方と機能（English）](README_v2.md)
+- [自然な文章を書く手順](references/astra-writing.md)
+- [修正前後の例と判断理由](docs/natural-writing-examples.ja.md)
+- [検証手順と限界（日本語）](references/verification.md)
+- [実測結果と未実施項目](docs/evaluation.md)
+- [採用範囲と後続版へ送る機能](docs/scope.md)
+
+```console
+python scripts/jw.py compare examples/source.txt examples/changed.txt --json
+python -m unittest discover -s tests -v
+```
+
+最初のコマンドは数値の変更を検出して `FAIL`・終了コード1を返す確認用の例である。
+`PASS`は指定した表層検査に限る。意味・否定・確信度・未登録の主張の追加まで保証しない。
+下記のダウンロード・過去の検証結果はv1.xの記録であり、v2候補の配布物や実LLM比較結果ではない。
+
+## v1.xの記録
+
 [English](README_EN.md)
 
 意味・事実・数値・書き手の声を守りながら、日本語文章を用途別に監査、推敲、再構成、または新規作成するCodex Skillである。
@@ -18,7 +45,7 @@ This repository is the main release line of the Codex Skill for auditable Japane
 - `natural`、`report`、`technical`、`manual`、`essay`、`application`の6つのreferenceはv1.0.0から変更していない。
 - 人工的な文長variation、接続詞の機械的削除、誤字、架空の経験などは追加していない。
 
-評価過程を保存した明示呼び出し版は[Japanese Writing Improved](https://github.com/yoshitani-dev/japanese-writing-improved-codex-skill)に残している。通常のインストール先は、このmain releaseを推奨する。
+評価した改善はこのBaselineへ統合済みであり、重複していたImproved公開リポジトリは削除済みである。
 
 ## かんたんダウンロード
 

@@ -10,7 +10,18 @@
     "SKILL.md",
     "agents/openai.yaml",
     "ARCHITECTURE.md",
-    "THIRD_PARTY_SOURCES.md"
+    "THIRD_PARTY_SOURCES.md",
+    "README_v2.md",
+    "pyproject.toml",
+    "scripts/jw.py",
+    "references/verification.md",
+    "references/astra-writing.md",
+    "docs/natural-writing-examples.ja.md",
+    "src/jw/contracts/edit.schema.json",
+    "src/jw/contracts/report.schema.json",
+    "docs/architecture.md",
+    "docs/evaluation.md",
+    "bench/report/v2.0.0rc1.json"
   ],
   "forbidden_globs": [
     "*.exe",
@@ -26,6 +37,7 @@
     "allow_implicit_invocation": true,
     "required_references": [
       "core.md",
+      "astra-writing.md",
       "natural.md",
       "report.md",
       "technical.md",

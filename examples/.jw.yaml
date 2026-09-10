@@ -1,0 +1,5 @@
+genre: technical
+max_chars: 300
+count_mode: no_newlines
+terms:
+  - "試作材A"

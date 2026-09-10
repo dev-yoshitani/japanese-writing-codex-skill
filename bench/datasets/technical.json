@@ -1,0 +1,359 @@
+[
+  {
+    "id": "technical-01",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。荷重は14 Nである。",
+    "candidate": "試験条件を記録する。荷重は41 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "technical-02",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。変位は8 mmである。",
+    "candidate": "試験条件を記録する。変位を測った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "8 mm"
+      }
+    ]
+  },
+  {
+    "id": "technical-03",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。測定を行った。",
+    "candidate": "試験条件を記録する。測定を9回行った。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": []
+  },
+  {
+    "id": "technical-04",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。費用は800円である。",
+    "candidate": "試験条件を記録する。費用は800円と800円である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "800円"
+      }
+    ]
+  },
+  {
+    "id": "technical-05",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。長さは16 mである。",
+    "candidate": "試験条件を記録する。長さは16 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "16 m"
+      }
+    ]
+  },
+  {
+    "id": "technical-06",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。日付は2025年6月8日である。",
+    "candidate": "試験条件を記録する。日付は2025年6月9日である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "technical-07",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。資料は <https://example.org/Study> を参照する。",
+    "candidate": "試験条件を記録する。資料は <https://example.org/study> を参照する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "url",
+        "value": "https://example.org/Study"
+      }
+    ]
+  },
+  {
+    "id": "technical-08",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。式は$y=x+7$である。",
+    "candidate": "試験条件を記録する。式は$y=x-7$である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "equation",
+        "value": "$y=x+7$"
+      }
+    ]
+  },
+  {
+    "id": "technical-09",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。限界荷重を確認する。",
+    "candidate": "試験条件を記録する。終極荷重を確認する。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "term",
+        "value": "限界荷重"
+      }
+    ]
+  },
+  {
+    "id": "technical-10",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。入力は18 N。出力は27 N。",
+    "candidate": "試験条件を記録する。入力は27 N。出力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": true,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "technical-11",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。荷重は14 Nである。",
+    "candidate": "試験条件を記録する。荷重は14 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "14 N"
+      }
+    ]
+  },
+  {
+    "id": "technical-12",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。幅は４２ mmである。",
+    "candidate": "試験条件を記録する。幅は42 mmである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "４２ mm"
+      }
+    ]
+  },
+  {
+    "id": "technical-13",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。参加者は2,400人である。",
+    "candidate": "試験条件を記録する。参加者は2400人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2,400人"
+      }
+    ]
+  },
+  {
+    "id": "technical-14",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。参加者は二百人である。",
+    "candidate": "試験条件を記録する。参加者は200人である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "二百人"
+      }
+    ]
+  },
+  {
+    "id": "technical-15",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。荷重は2.3e3 Nである。",
+    "candidate": "試験条件を記録する。荷重は2300 Nである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "2.3e3 N"
+      }
+    ]
+  },
+  {
+    "id": "technical-16",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。日付は2025年6月8日である。",
+    "candidate": "試験条件を記録する。日付は2025-06-08である。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "date",
+        "value": "2025年6月8日"
+      }
+    ]
+  },
+  {
+    "id": "technical-17",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。入力は18 N。出力は27 N。",
+    "candidate": "試験条件を記録する。出力は27 N。入力は18 N。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "18 N"
+      },
+      {
+        "kind": "quantity",
+        "value": "27 N"
+      }
+    ]
+  },
+  {
+    "id": "technical-18",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。温度は240 Kであり、圧力は80 Paである。",
+    "candidate": "試験条件を記録する。温度は240 Kである。圧力は80 Paである。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": [
+      {
+        "kind": "quantity",
+        "value": "240 K"
+      },
+      {
+        "kind": "quantity",
+        "value": "80 Pa"
+      }
+    ]
+  },
+  {
+    "id": "technical-19",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。実際に測定を行った。",
+    "candidate": "試験条件を記録する。実測した。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  },
+  {
+    "id": "technical-20",
+    "genre": "technical",
+    "synthetic": true,
+    "source": "試験条件を記録する。赤、青、白を選んだ。",
+    "candidate": "試験条件を記録する。赤、青、白を選んだ。",
+    "terms": [
+      "限界荷重",
+      "終極荷重"
+    ],
+    "expected_fail": false,
+    "source_facts": []
+  }
+]

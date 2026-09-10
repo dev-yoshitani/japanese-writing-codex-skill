@@ -1,5 +1,8 @@
 # Architecture
 
+For the v2 candidate, see [Verification Core architecture](docs/architecture.md).
+The sections below preserve the historical v1.x design and source snapshot.
+
 ## Decision
 
 一つのumbrella Skill `japanese-writing`を採用した。6個の独立Skillには分割しない。

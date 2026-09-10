@@ -1,0 +1,27 @@
+name: Verification core
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit, golden, replay, adversarial and fixed benchmark
+        run: python -X utf8 -m unittest discover -s tests -v
+      - name: Synthetic benchmark against fixed gold
+        run: python -X utf8 bench/run.py
+      - name: Public repository and skill contract
+        run: python -X utf8 tools/public_repo_guard.py --root . --manifest repo-guard.json
+      - name: Package and verify extracted CLI
+        run: python -X utf8 tools/package_v2.py --output-dir dist

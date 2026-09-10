@@ -18,3 +18,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Build artifacts and optional local environments
+dist/
+build/
+*.egg-info/
+.venv/
