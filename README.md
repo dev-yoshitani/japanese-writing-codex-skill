@@ -1,5 +1,9 @@
 # Japanese Writing for Codex
 
+事実・数値・書き手の文体を保ちながら、日本語の執筆・推敲を支援する非公式Codex Skillです。
+文章規則に加え、任意のPython検証機能を実装しています。
+[設計](docs/architecture.md) · [検証結果と限界](docs/evaluation.md) · [利用条件](#ライセンス) · [English](README_EN.md)
+
 ## v2.0.0rc2 — Astraで自然な文章を書くための改善版
 
 Astraが文脈を読み、文のつながり、読み返す負担、情報の順序、書き手の語彙や調子を整える手順を追加した。共通規則の重複を整理し、本文の完成を優先する。数値などを確認するPythonエンジンは任意で使える。
@@ -49,7 +53,7 @@ This repository is the main release line of the Codex Skill for auditable Japane
 
 ## かんたんダウンロード
 
-[**最新版の `japanese-writing.zip` をダウンロード**](https://github.com/yoshitani-dev/japanese-writing-codex-skill/releases/latest/download/japanese-writing.zip)
+[**安定版 v1.1.0 の `japanese-writing.zip` をダウンロード**](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v1.1.0/japanese-writing.zip)
 
 1. ダウンロードしたZIPを展開する。
 2. 中の`japanese-writing`フォルダーを`C:\Users\<ユーザー名>\.codex\skills\`へ置く。
@@ -96,13 +100,13 @@ macOS / Linuxでは、`japanese-writing`フォルダーを`${CODEX_HOME:-$HOME/.
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/yoshitani-dev/japanese-writing-codex-skill.git "$env:USERPROFILE\.codex\skills\japanese-writing"
+git clone https://github.com/dev-yoshitani/japanese-writing-codex-skill.git "$env:USERPROFILE\.codex\skills\japanese-writing"
 ```
 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/yoshitani-dev/japanese-writing-codex-skill.git "${CODEX_HOME:-$HOME/.codex}/skills/japanese-writing"
+git clone https://github.com/dev-yoshitani/japanese-writing-codex-skill.git "${CODEX_HOME:-$HOME/.codex}/skills/japanese-writing"
 ```
 
 インストール後、Codexを再起動するか新しいタスクを開始する。

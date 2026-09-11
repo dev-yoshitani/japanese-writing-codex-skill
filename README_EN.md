@@ -52,7 +52,7 @@ The validated improvement was integrated into this Baseline. The redundant publi
 
 ## Download and installation
 
-[**Download the latest `japanese-writing.zip`**](https://github.com/yoshitani-dev/japanese-writing-codex-skill/releases/latest/download/japanese-writing.zip)
+[**Download stable v1.1.0 `japanese-writing.zip`**](https://github.com/dev-yoshitani/japanese-writing-codex-skill/releases/download/v1.1.0/japanese-writing.zip)
 
 Extract the archive and place its `japanese-writing` folder at:
 
@@ -65,7 +65,7 @@ On macOS or Linux, use `${CODEX_HOME:-$HOME/.codex}/skills/japanese-writing/`. R
 Git installation is also available:
 
 ```powershell
-git clone https://github.com/yoshitani-dev/japanese-writing-codex-skill.git "$env:USERPROFILE\.codex\skills\japanese-writing"
+git clone https://github.com/dev-yoshitani/japanese-writing-codex-skill.git "$env:USERPROFILE\.codex\skills\japanese-writing"
 ```
 
 ## Usage
