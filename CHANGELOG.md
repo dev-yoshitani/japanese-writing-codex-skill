@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Shorten the skill description while preserving its writing modes and exclusions.
+- Load the detailed natural-writing reference for focused naturalness reviews or uncertain editorial judgments; keep simple typo edits on the core and genre guidance.
+- Preserve fact protection, automatic invocation, and the optional verifier. Released v2.0.0rc2 archives remain unchanged; these refinements are available from the repository branch.
+
 ## v2.0.0rc2 — 2026-09-10 (prerelease)
 
 - Prioritize natural prose with Astra: context, reading flow, writer voice and
