@@ -1,5 +1,27 @@
 # Evaluation evidence for 2.0.0rc2
 
+## Voice workflow addition — 2026-10-18
+
+Local Linux / Python verification passed 55 unittest methods: the inherited 40
+and 15 new methods for revision review and user-reported measurement records.
+The new tests cover removal of negation, stronger certainty, changed plans,
+actor/object swaps, code exclusion, count boundaries, private default output,
+placeholders, empty revisions, exact-byte fingerprints, stale final text,
+measurement provenance, invalid metadata and exclusive output creation.
+One test explicitly retains the blind spot where cue counts stay the same but
+their attribution changes. No semantic equivalence claim follows from a clean
+review report. The repository guard returned zero errors and warnings, and
+`git diff --check` passed. These checks do not measure naturalness or any
+detector's performance. No Pangram measurement was performed.
+
+Two fresh agent tasks exercised the registered skills: a short application
+rebuilt from a draft with no voice sample, and an audit containing changed
+actors, a changed quantity, removed negation and a changed intention. The first
+task preserved the supplied facts and counted its output at 93 characters;
+the second reported all four changes. These are two synthetic smoke tests,
+not blind preference comparisons or detector measurements. The application
+task ran the new review helper; the audit task used manual review only.
+
 Publication note: the development checks below describe the pre-publication state. See the root README for current prerelease downloads.
 
 ## Current rc2 verification — 2026-09-10
