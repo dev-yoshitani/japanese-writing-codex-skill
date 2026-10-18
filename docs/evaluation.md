@@ -1,5 +1,18 @@
 # Evaluation evidence for 2.0.0rc2
 
+## Structural rewrite playbook — 2026-10-18
+
+Added 15 editorial symptoms with contextual keep/change decisions after reading
+the public humanizer, natural-japanese and yomiyasu skills. This follow-up changes
+instructions and references only; the 55-method code suite below is unchanged.
+A fresh agent read the edited on-disk skill and playbook, then rewrote a synthetic
+application-style paragraph to 83 characters including spaces and punctuation.
+The output retained a 1 mm deviation, the fact that repair had not happened, and
+the writer's stated lesson about checking. It ran the review helper and disclosed
+that Pangram and the writer's voice had not been validated. The repository guard,
+local-reference checks and whitespace check passed. This single smoke test is not
+a naturalness preference benchmark or evidence of improved detector performance.
+
 ## Voice workflow addition — 2026-10-18
 
 Local Linux / Python verification passed 55 unittest methods: the inherited 40

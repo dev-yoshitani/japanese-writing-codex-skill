@@ -16,3 +16,15 @@
 | S10 | [jalaalrd/anti-ai-slop-writing](https://github.com/jalaalrd/anti-ai-slop-writing/tree/63255f9bbb75a265dc5786a04535cd033f487756) | `UNRESOLVED`: README states MIT, no LICENSE file | 比較・批判的検討のみ。文章・codeを再利用していない |
 
 詳細な読解範囲、commit、security notesは[research/source-manifest.md](research/source-manifest.md)と[research/security-review.md](research/security-review.md)に記録した。
+
+## 2026-10-18の追加参照
+
+下記は上表の固定commitによる過去の比較とは別に、2026-10-18時点の公開SKILL.mdを閲覧した記録である。説明と例を独自に作成し、コードや本文のまとまった転用は行っていない。runtimeの依存関係は追加していない。
+
+| Repository | 参照した点 |
+| --- | --- |
+| [blader/humanizer](https://github.com/blader/humanizer/blob/main/SKILL.md) | 空疎な対比、予告、締め、段落単位の定型構造 |
+| [coji/natural-japanese](https://github.com/coji/natural-japanese/blob/main/skills/natural-japanese/SKILL.md) | 文体サンプルの根拠、説明量の濃淡、候補の文脈判断 |
+| [nanaism/yomiyasu](https://github.com/nanaism/yomiyasu/blob/main/skills/yomiyasu/SKILL.md) | 文の働き、主体、修飾、条件を保った編集 |
+
+取り入れた判断基準は [rewrite-playbook](references/rewrite-playbook.md) に記載した。検出器での非検出性能は測定していない。
